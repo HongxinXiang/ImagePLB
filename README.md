@@ -57,9 +57,9 @@ pip install einops
 #### 1. Pre-training Dataset
 
 | Name                               | Download link                                                | Description                               |
-| ---------------------------------- | ------------------------------------------------------------ | ----------------------------------------- |
-| multi_view_trajectory_video.tar.gz | [BaiduCloud]()                                               | ligand trajectory with multi-view images. |
-| pocket_trajectory.tar.gz           | [OneDrive](https://1drv.ms/u/s!Atau0ecyBQNTgUjpCzZnwgp4Inpr?e=ASMVhC) | pocket trajectory with point cloud.       |
+| ---------------------------------- | ------------------------------------------------------------ |-------------------------------------------|
+| multi_view_trajectory_video.tar.gz | [BaiduCloud](https://pan.baidu.com/s/1ijVSX4ORfYQvAgxpcGzjEg?pwd=khbx) | ligand trajectory with multi-view images. |
+| pocket.tar.gz                      | [OneDrive](https://1drv.ms/u/s!Atau0ecyBQNTgUjpCzZnwgp4Inpr?e=ASMVhC) | pocket trajectory with 3D graphs.         |
 
 Please download all data listed above and put it in `datasets/pre-training/MISATO/processed/` if you want to pre-train ImagePLB from scratch.
 
@@ -250,5 +250,6 @@ The files include training logs and checkpoints for training ImagePLB-P with thr
 If our paper or code is helpful to you, please do not hesitate to point a star for our repository and cite the following content.
 
 ```tex
+
 ```
 
