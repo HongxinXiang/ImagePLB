@@ -234,12 +234,12 @@ python lep.py \
 
 We provide detailed training logs and corresponding checkpoints, you can easily see more training details from the logs and directly use our trained models for structure-based virtual screening.
 
-| Name             | Download link                                                | Description                                            |
-| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------ |
-| PDBBind-30       | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggfNOyNflBKwP42W?e=vrExZf) | The training details of ImagePLB-P on PDBBind-30       |
-| PDBBind-60       | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggjgBxn5vQZV9AfO?e=a8hmfT) | The training details of ImagePLB-P on PDBBind-60       |
+| Name             | Download link                                                | Description                                           |
+| ---------------- | ------------------------------------------------------------ | ----------------------------------------------------- |
+| PDBBind-30       | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggfNOyNflBKwP42W?e=vrExZf) | The training details of ImagePLB-P on PDBBind-30      |
+| PDBBind-60       | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggjgBxn5vQZV9AfO?e=a8hmfT) | The training details of ImagePLB-P on PDBBind-60      |
 | PDBBind-Scaffold | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggkRSgvkhobN9gYJ?e=PlVC3q) | The training details of ImagePLB-P on PDBBind-Scaffold |
-| LEP              | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggBYKwtJl2-6aoUT?e=iQWXe1) | The training details of ImagePLB-P on PDBBind-LEP      |
+| LEP              | [OneDrive](https://1drv.ms/f/s!Atau0ecyBQNTggBYKwtJl2-6aoUT?e=iQWXe1) | The training details of ImagePLB-P on LEP      |
 
 The files include training logs and checkpoints for training ImagePLB-P with three random seeds (0, 1, 2).
 
