@@ -1,4 +1,4 @@
-# ImagePLB✨
+# ImagePLB 🐘
 
 Official PyTorch-based implementation of Paper "An Image-based Protein-Ligand Binding Representation Learning
 Framework via Multi-Level Flexible Dynamics Trajectory Pre-training".
@@ -49,6 +49,34 @@ pip install seaborn
 conda install openbabel -c conda-forge
 pip install einops
 ```
+
+
+
+## Data preprocessing
+
+We use PyMOL to genearte multi-view ligand images from molecular conformations. Here is the PyMOL script to get the multi-view ligand images, you can run it in the PyMOL command:
+
+<details>
+<summary>Click here for the code!</summary>
+
+```bash
+sdf_filepath=demo.sdf  # sdf file path of ligand
+rotate_direction=x
+rotate=0
+save_img_path=demo_frame.png
+load $sdf_filepath;bg_color white;set stick_ball,on;set stick_ball_ratio,3.5;set stick_radius,0.15;set sphere_scale,0.2;set valence,1;set valence_mode,0;set valence_size, 0.1;rotate $rotate_direction, $rotate;save $save_img_path;quit;
+```
+
+</details>
+
+Note that we used 4 views by setting the following parameters:
+
+- rotate_direction=x; rotate=0
+- rotate_direction=x; rotate=180
+- rotate_direction=y; rotate=180
+- rotate_direction=z; rotate=180
+
+Of course, to save you time on data preprocessing, we also provide download links for all data for your free access.
 
 
 
@@ -230,7 +258,7 @@ python lep.py \
 
 
 
-## Reproducing Our Results
+## 💡Reproducing Our Results
 
 We provide detailed training logs and corresponding checkpoints, you can easily see more training details from the logs and directly use our trained models for structure-based virtual screening.
 
