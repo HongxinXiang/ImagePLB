@@ -300,7 +300,7 @@ The files include training logs and checkpoints for training ImagePLB-P with thr
 
 # 📚 Citation
 
-If you find this repository helpful, please consider citing our work and starring 🌟 the repo.
+If you find this repository helpful, please consider citing our work and starring 🌟 the repository.
 
 ```tex
 
