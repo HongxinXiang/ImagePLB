@@ -1,27 +1,47 @@
 # ImagePLB 🐘
 
-Official PyTorch-based implementation of Paper "An Image-based Protein-Ligand Binding Representation Learning
-Framework via Multi-Level Flexible Dynamics Trajectory Pre-training".
+Official PyTorch-based implementation of Paper:
+
+**"An Image-based Protein-Ligand Binding Representation Learning Framework via Multi-Level Flexible Dynamics Trajectory Pre-training"**
+
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+<a href="https://github.com/HongxinXiang/ImagePLB/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/HongxinXiang/ImagePLB?style=flat-square"></a>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HongxinXiang/ImagePLB?style=flat-square">
+<a href="" target='_blank'><img src="https://visitor-badge.laobi.icu/badge?page_id=HongxinXiang.ImagePLB-X&left_color=gray&right_color=orange"></a>
 
 
 
-## News!
+## 📌 Table of Contents
 
-**[2024/06/28]** Repository installation completed.
-
-
-
-## Environments
-
-#### 1. GPU environment
-
-CUDA 11.6
-
-Ubuntu 18.04
+- [🚀 News](#-news)
+- [🛠️ Installation & Environment Setup](#️-installation--environment-setup)
+- [🖼️ Data Preprocessing](#️-data-preprocessing)
+- [🧪 Pre-training ImagePLB](#-pre-training-imageplb)
+- [🎯 Fine-tuning on Downstream Tasks](#-fine-tuning-on-downstream-tasks)
+- [📊 Reproducing Our Results](#-reproducing-our-results)
+- [📚 Citation](#-citation)
 
 
 
-#### 2. create conda environment
+---
+
+
+
+## 🚀 News
+
+- **[2024/06/28]** Repository setup completed. Code and instructions released.
+
+
+
+## 🛠️ Installation & Environment Setup
+
+### 1. Hardware/Software Environment
+
+- GPU with CUDA 11.6
+- Ubuntu 18.04
+
+
+### 2. Setup with Conda
 
 ```bash
 # create conda env
@@ -52,7 +72,7 @@ pip install einops
 
 
 
-## Data preprocessing
+## 🖼️ Data Preprocessing
 
 We use PyMOL to genearte multi-view ligand images from molecular conformations. Here is the PyMOL script to get the multi-view ligand images, you can run it in the PyMOL command:
 
@@ -80,14 +100,15 @@ Of course, to save you time on data preprocessing, we also provide download link
 
 
 
-## Pre-Training ImagePLB
+## 🧪 Pre-training ImagePLB
 
 #### 1. Pre-training Dataset
 
-| Name                               | Download link                                                | Description                               |
-| ---------------------------------- | ------------------------------------------------------------ |-------------------------------------------|
-| multi_view_trajectory_video.tar.gz | [BaiduCloud](https://pan.baidu.com/s/1ijVSX4ORfYQvAgxpcGzjEg?pwd=khbx) | ligand trajectory with multi-view images. |
-| pocket.tar.gz                      | [OneDrive](https://1drv.ms/u/s!Atau0ecyBQNTgUjpCzZnwgp4Inpr?e=ASMVhC) | pocket trajectory with 3D graphs.         |
+| Name                                  | Download link                                                | Description                                                  |
+| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| multi_view_trajectory_video.tar.gz    |                                                              |                                                              |
+| multi_view_trajectory_video_1%.tar.gz | [BaiduCloud](https://pan.baidu.com/s/1ijVSX4ORfYQvAgxpcGzjEg?pwd=khbx) | ligand trajectory with 1% multi-view images. (only #1 frame is multi-view images) |
+| pocket.tar.gz                         | [OneDrive](https://1drv.ms/u/s!Atau0ecyBQNTgUjpCzZnwgp4Inpr?e=ASMVhC) | pocket trajectory with 3D graphs.                            |
 
 Please download all data listed above and put it in `datasets/pre-training/MISATO/processed/` if you want to pre-train ImagePLB from scratch.
 
@@ -120,7 +141,7 @@ datasets/pre-training/MISATO/processed/
 
 
 
-#### 2. ❄️Direct access to pre-trained ImagePLB
+#### 2. Download Pretrained Model
 
 The pre-trained ImagePLB (ImagePLB-P) can be accessed in following table.
 
@@ -130,7 +151,7 @@ The pre-trained ImagePLB (ImagePLB-P) can be accessed in following table.
 
 
 
-#### 3. 🔥Train your own ImagePLB-P from scratch
+#### 3. Pre-train ImagePLB-P from Scratch
 
 If you want to pre-train your own ImagePLB-P, see the command below.
 
@@ -171,7 +192,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python pretrain_ImagePLB.py \
 
 
 
-## 🔥Training ImagePLB on Downstream Tasks
+## 🎯 Fine-tuning ImagePLB on Downstream Tasks
+
+### 1. Datasets
 
 All downstream task data is publicly accessible below:
 
@@ -220,7 +243,9 @@ datasets/fine-tuning/
 
 
 
-- run command in finetune folder for PDBBind:
+### 2. Run Fine-tuning
+
+- run command in finetune folder **for PDBBind**:
 
 ```bash
 python pdbbind.py \
@@ -239,7 +264,7 @@ python pdbbind.py \
 
 
 
-- run command in finetune folder for LEP：
+- run command in finetune folder **for LEP**：
 
 ```bash
 python lep.py \
@@ -258,7 +283,7 @@ python lep.py \
 
 
 
-## 💡Reproducing Our Results
+## 📊 Reproducing Our Results
 
 We provide detailed training logs and corresponding checkpoints, you can easily see more training details from the logs and directly use our trained models for structure-based virtual screening.
 
@@ -273,11 +298,13 @@ The files include training logs and checkpoints for training ImagePLB-P with thr
 
 
 
-# Reference
+# 📚 Citation
 
-If our paper or code is helpful to you, please do not hesitate to point a star for our repository and cite the following content.
+If you find this repository helpful, please consider citing our work and starring 🌟 the repo.
 
 ```tex
 
 ```
+
+
 
