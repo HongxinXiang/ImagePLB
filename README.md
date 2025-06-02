@@ -4,7 +4,7 @@ Official PyTorch-based implementation of Paper:
 
 **"An Image-based Protein-Ligand Binding Representation Learning Framework via Multi-Level Flexible Dynamics Trajectory Pre-training"**
 
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 <a href="https://github.com/HongxinXiang/ImagePLB/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/HongxinXiang/ImagePLB?style=flat-square"></a>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HongxinXiang/ImagePLB?style=flat-square">
 <a href="" target='_blank'><img src="https://visitor-badge.laobi.icu/badge?page_id=HongxinXiang.ImagePLB-X&left_color=gray&right_color=orange"></a>
