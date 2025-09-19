@@ -29,6 +29,8 @@ Official PyTorch-based implementation of Paper:
 
 ## 🚀 News
 
+- **[2025/09/19]** 🎉 Paper was accepted by _Bioinformatics_!
+
 - **[2024/06/28]** Repository setup completed. Code and instructions released.
 
 
