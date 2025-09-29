@@ -10,6 +10,8 @@ Official PyTorch-based implementation of Paper:
 <a href="" target='_blank'><img src="https://visitor-badge.laobi.icu/badge?page_id=HongxinXiang.ImagePLB-X&left_color=gray&right_color=orange"></a>
 
 
+![](./assets/framework.png)
+
 
 ## 📌 Table of Contents
 
@@ -303,7 +305,19 @@ The files include training logs and checkpoints for training ImagePLB-P with thr
 If you find this repository helpful, please consider citing our work and starring 🌟 the repository.
 
 ```tex
-
+@article{10.1093/bioinformatics/btaf535,
+    author = {Xiang, Hongxin and Liu, Mingquan and Hou, Linlin and Jin, Shuting and Wang, Jianmin and Xia, Jun and Du, Wenjie and Yuan, Sisi and Fu, Xiangzheng and Yang, Xinyu and Zeng, Li and Xu, Lei},
+    title = {An Image-based Protein-Ligand Binding Representation Learning Framework via Multi-Level Flexible Dynamics Trajectory Pre-Training},
+    journal = {Bioinformatics},
+    pages = {btaf535},
+    year = {2025},
+    month = {09},
+    abstract = {Accurate prediction of protein-ligand binding (PLB) relationships plays a crucial role in drug discovery, which helps identify drugs that modulate the activity of specific targets. Traditional biological assays for measuring PLB relationships are time consuming and costly. In addition, models for predicting PLB relationships have been developed and widely used in drug discovery tasks. However, learning more accurate PLB representations is essential to meet the stringent standards required for drug discovery.We propose an image-based protein-ligand binding representation learning framework, called ImagePLB, which equips ligand representation learner (LRL) and protein representation learner (PRL) to accept 3D multi-view ligand images and protein graphs as input respectively and learns rich interaction information between ligand and protein through a binding representation learner (BRL). Considering the scarcity of protein-ligand pairs, we further propose a multi-level next trajectory prediction (MLNTP) task to pre-train ImagePLB on the 4D flexible dynamics trajectory of 16,972 complexes, including ligand-level, protein-level and complex-level, to learn information related to trajectories. Besides, by introducing trajectory regularization (TR), we effectively alleviate the problem of high (even almost identical) feature similarity caused by adjacent trajectories.The proposed pre-training strategies (MLNTP and TR) can further improve the performance of ImagePLB. Compared with the current state-of-the-art methods, ImagePLB has achieved competitive improvements on PLB-related prediction tasks, including protein-ligand affinity and efficacy prediction tasks. This study opens the door to the image-based PLB learning paradigm.All data and implementation details of code can be obtained from https://github.com/HongxinXiang/ImagePLB.},
+    issn = {1367-4811},
+    doi = {10.1093/bioinformatics/btaf535},
+    url = {https://doi.org/10.1093/bioinformatics/btaf535},
+    eprint = {https://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btaf535/64373676/btaf535.pdf},
+}
 ```
 
 
